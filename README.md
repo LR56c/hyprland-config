@@ -113,21 +113,28 @@ cd rofi-themes-collection && \
 mkdir -p ~/.local/share/rofi/themes/ && \
 cp themes/spotlight-dark.rasi  ~/.local/share/rofi/themes/
 ```
+```bash
+cd ~/.config/custom-themes/catpuccin && \
+git clone https://github.com/catppuccin/rofi/ && \
+cd rofi/basic && \
+sh install.sh
+```
 
 ## Ulauncher Theme
 ```bash
 mkdir -p ~/.config/ulauncher/user-themes
 ```
 ```bash
-sudo git clone https://github.com/Raayib/WhiteSur-Dark-ulauncher.git \
+git clone https://github.com/Raayib/WhiteSur-Dark-ulauncher.git \
   ~/.config/ulauncher/user-themes/WhiteSur-Dark-ulauncher
 ```
 ## Dotly
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/installer)
 ```
+- in `garuda-hyprland-pc-config` folder:
 ```bash
-cp ~/.config/.zshrc ~
+cp .zshrc ~
 ```
 
 ## Sdkman

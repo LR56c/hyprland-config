@@ -50,7 +50,7 @@
     },
     "hyprland/window": {
         "format": "{}",
-        "icon": true,
+        "icon": false,
         "icon-size": 20
     },
     "tray": {
