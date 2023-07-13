@@ -33,6 +33,11 @@ cp -r garuda-hyprland-pc-config/* ~/.config
     - copy discord.desktop file in `/<discord_path>/Discord` to: `/home/lr56c/.local/share/applications/discord.desktop`
       - add: `Exec=/<discord_path>/Discord`
 
+- jetbrains config
+```bash
+https://github.com/LR56c/jetbrains_ide_settings
+```
+
 ## Important Dependencies
 ```bash
 sudo chmod +x ~/.config/deps_install.sh
@@ -111,11 +116,12 @@ cp themes/spotlight-dark.rasi  ~/.local/share/rofi/themes/
 
 ## Ulauncher Theme
 ```bash
-mkdir -p ~/.config/ulauncher/user-themes && \
+mkdir -p ~/.config/ulauncher/user-themes
+```
+```bash
 git clone https://github.com/Raayib/WhiteSur-Dark-ulauncher.git \
   ~/.config/ulauncher/user-themes/WhiteSur-Dark-ulauncher
 ```
-
 ## Dotly
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/installer)
