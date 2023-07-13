@@ -24,13 +24,14 @@ cp -r /garuda-hyprland-pc-config/* ~/.config
 ```
 
 ## Remember
+- [wallpapers drive](https://drive.google.com/drive/folders/1ZyZNp6Md5Gx8ghSbyd6rbU-kC3SYT3gc?usp=sharing)
 - setup qt and gtk theme +font
 - setup ulauncher theme
-- [wallpapers drive](https://drive.google.com/drive/folders/1ZyZNp6Md5Gx8ghSbyd6rbU-kC3SYT3gc?usp=sharing)
-- [Discord manual](https://discord.com/api/download?platform=linux&format=tar.gz) 
-  - [BetterDiscord](https://betterdiscord.app/) 
-  - file: `/home/lr56c/.local/share/applications/discord.desktop`
-    - add: `Exec=/<discord_path>/Discord`
+- [setup discord manual](https://discord.com/api/download?platform=linux&format=tar.gz) 
+  - [Install BetterDiscord](https://betterdiscord.app/) 
+  - setup application search in rofi/ulauncher
+    - copy discord.desktop file in `/<discord_path>/Discord` to: `/home/lr56c/.local/share/applications/discord.desktop`
+      - add: `Exec=/<discord_path>/Discord`
 
 ## Important Dependencies
 ```bash
@@ -55,6 +56,7 @@ sudo snap install flutter --classic
 ```
 
 ## Manual AUR Packages
+- recommend pamac-aur (GUI)
 ```bash
 anyrun-git
 ```
