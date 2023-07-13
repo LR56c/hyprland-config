@@ -1,0 +1,19 @@
+{
+    "pyprland": {
+      "plugins": [
+        "scratchpads",
+        "lost_windows",
+        "workspaces_follow_focus"
+      ]
+    },
+    "scratchpads": {
+      "volume": {
+        "command": "pavucontrol",
+        "unfocus": "hide",
+        "animation": "fromRight"
+      }
+    },
+    "workspaces_follow_focus": {
+      "max_workspaces": 2
+    }
+  }

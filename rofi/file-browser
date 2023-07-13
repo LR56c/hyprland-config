@@ -1,0 +1,13 @@
+cmd "pcmanfm"                  
+dir "/"                         
+depth 2                         
+open-multi-key "kb-accept-alt"  
+open-custom-key "kb-custom-11"  
+hide-hidden-symbol ""           
+path-sep "/"                    
+up-text "up"                    
+up-icon "go-previous"           
+oc-search-path                  
+oc-cmd "gimp;icon:gimp"         
+exclude workspace
+show-hidden

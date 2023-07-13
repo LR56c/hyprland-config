@@ -1,0 +1,125 @@
+# necesarios
+sudo pacman -Syu --noconfirm
+sudo pacman -S --noconfirm anyrun-git
+sudo pacman -S --noconfirm bind
+sudo pacman -S --noconfirm clamtk
+sudo pacman -S --noconfirm copyq
+sudo pacman -S --noconfirm dkms
+sudo pacman -S --noconfirm docker
+sudo pacman -S --noconfirm libreoffice-fresh
+sudo pacman -S --noconfirm dolphin
+sudo pacman -S --noconfirm exercism
+sudo pacman -S --noconfirm firefox
+sudo pacman -S --noconfirm fish
+sudo pacman -S --noconfirm galculator
+sudo pacman -S --noconfirm geany
+sudo pacman -S --noconfirm gimp
+sudo pacman -S --noconfirm github
+sudo pacman -S --noconfirm gitkraken
+sudo pacman -S --noconfirm grimblast-git
+sudo pacman -S --noconfirm htop
+sudo pacman -S --noconfirm hyprland-autoname-workspaces-git
+sudo pacman -S --noconfirm hyprpicker
+sudo pacman -S --noconfirm jetibrains-toolbox
+sudo pacman -S --noconfirm kitty
+sudo pacman -S --noconfirm konsole
+sudo pacman -S --noconfirm kvantum-git
+sudo pacman -S --noconfirm mpv
+sudo pacman -S --noconfirm neofetch
+sudo pacman -S --noconfirm nnn
+sudo pacman -S --noconfirm nodejs
+sudo pacman -S --noconfirm npm
+sudo pacman -S --noconfirm nvm
+sudo pacman -S --noconfirm obs-studio
+sudo pacman -S --noconfirm obsidian
+sudo pacman -S --noconfirm octopi
+sudo pacman -S --noconfirm pamac-aur
+sudo pacman -S --noconfirm pnpm
+sudo pacman -S --noconfirm postman-bin
+sudo pacman -S --noconfirm psensor
+sudo pacman -S --noconfirm python-fuzzywuzzy
+sudo pacman -S --noconfirm python-pip
+sudo pacman -S --noconfirm qt5ct
+sudo pacman -S --noconfirm rofi
+sudo pacman -S --noconfirm rofi-file-browser-extended-git
+sudo pacman -S --noconfirm snapd
+sudo pacman -S --noconfirm stacer
+sudo pacman -S --noconfirm textsnatcher
+sudo pacman -S --noconfirm ttf-ms-fonts
+sudo pacman -S --noconfirm udiskie
+sudo pacman -S --noconfirm ulauncher
+sudo pacman -S --noconfirm visual-studio-code-bin
+sudo pacman -S --noconfirm yarn
+sudo pacman -S --noconfirm yay
+sudo pacman -S --noconfirm wlsunset
+sudo pacman -S --noconfirm wpaperd
+sudo pacman -S --noconfirm google-chrome
+sudo pacman -S --noconfirm wmctrl
+sudo pacman -S --noconfirm xdotool
+sudo pacman -S --noconfirm wev
+sudo pacman -S --noconfirm pyprland
+
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+
+sudo pacman -Syu --noconfirm
+
+# snap
+flutter
+neovim
+
+#restante.. 
+dotly
+qt/gtk theme +font
+rofi theme
+ulauncher theme
+sdkman
+vlang
+emote
+discord manual (+BetterDiscord) (/home/lr56c/.local/share/applications/discord.desktop)
+
+wallpapers
+
+# guardados
+zenity
+ttf-jetbrains-mono
+nwg-drawer
+nwg-launchers
+nwg-look
+appimagelauncher
+
+#opcionales
+alacritty
+pieces-os
+pieces-for-developers
+
+# wifi tplink t2u
+mkdir drivers
+cd drivers
+git clone https://github.com/aircrack-ng/rtl8812au.git
+cd rtl8812au
+sudo make dkms_install
+
+# rofi theme
+git clone https://github.com/lr-tech/rofi-themes-collection.git
+cd rofi-themes-collection
+mkdir -p ~/.local/share/rofi/themes/
+cp themes/spotlight-dark.rasi  ~/.local/share/rofi/themes/
+
+# ulauncher theme
+mkdir -p ~/.config/ulauncher/user-themes
+git clone https://github.com/Raayib/WhiteSur-Dark-ulauncher.git \
+  ~/.config/ulauncher/user-themes/WhiteSur-Dark-ulauncher
+
+#dotly
+bash <(wget -qO- https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/installer)
+
+#sdkman
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 11.0.19-tem
+
+#vlang
+git clone https://github.com/vlang/v
+cd v
+make

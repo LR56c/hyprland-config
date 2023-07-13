@@ -1,0 +1,482 @@
+{
+    "31c5cce9-c26e-4634-838a-cc2dd9f59e47": {
+        "id": "31c5cce9-c26e-4634-838a-cc2dd9f59e47",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1686415170.0038724
+    },
+    "4d36198e-ef48-4759-b5e5-0e00d4568c92": {
+        "id": "4d36198e-ef48-4759-b5e5-0e00d4568c92",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1686415170.003887
+    },
+    "cc542b58-8485-4afe-963c-a09876771dd0": {
+        "id": "cc542b58-8485-4afe-963c-a09876771dd0",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1686415170.0038974
+    },
+    "8139e7d9-085f-4441-a291-dac17dbd5242": {
+        "id": "8139e7d9-085f-4441-a291-dac17dbd5242",
+        "name": "gmail",
+        "keyword": "gmail",
+        "cmd": "https://mail.google.com/mail/u/0/#inbox",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435485.4463048
+    },
+    "d5e17448-e515-4702-a518-2ae2a9c23b70": {
+        "id": "d5e17448-e515-4702-a518-2ae2a9c23b70",
+        "name": "twitch",
+        "keyword": "tw",
+        "cmd": "https://www.twitch.tv/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435497.6122189
+    },
+    "669cf76e-2550-45d5-90cd-0ac17825c921": {
+        "id": "669cf76e-2550-45d5-90cd-0ac17825c921",
+        "name": "twitter",
+        "keyword": "tt",
+        "cmd": "https://twitter.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435522.4466014
+    },
+    "9e565657-c729-4cae-9545-1d6963da49fb": {
+        "id": "9e565657-c729-4cae-9545-1d6963da49fb",
+        "name": "maps",
+        "keyword": "maps",
+        "cmd": "https://www.google.com/maps",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435564.974939
+    },
+    "c4aa959c-1692-4740-b360-b6c3f60491bd": {
+        "id": "c4aa959c-1692-4740-b360-b6c3f60491bd",
+        "name": "youtube main",
+        "keyword": "ytm",
+        "cmd": "https://www.youtube.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435581.225429
+    },
+    "d5de469e-eb9b-49a0-bd40-d82c85776465": {
+        "id": "d5de469e-eb9b-49a0-bd40-d82c85776465",
+        "name": "youtube",
+        "keyword": "yt",
+        "cmd": "https://www.youtube.com/results?search_query=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1686435610.0919623
+    },
+    "7c80bcc2-515a-49bf-b691-39caf06b56ce": {
+        "id": "7c80bcc2-515a-49bf-b691-39caf06b56ce",
+        "name": "facebook",
+        "keyword": "facebook",
+        "cmd": "https://www.facebook.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435627.7609708
+    },
+    "b044c6d7-de72-463f-88a5-4524dcdc7e59": {
+        "id": "b044c6d7-de72-463f-88a5-4524dcdc7e59",
+        "name": "github",
+        "keyword": "gh",
+        "cmd": "https://github.com/LR56c?tab=repositories",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435743.093363
+    },
+    "e29c8a82-be44-433e-a25b-61f290468204": {
+        "id": "e29c8a82-be44-433e-a25b-61f290468204",
+        "name": "udemy",
+        "keyword": "udemy",
+        "cmd": "https://www.udemy.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435859.4384353
+    },
+    "50ae32bc-e8cd-4129-94cc-2f1678334b5e": {
+        "id": "50ae32bc-e8cd-4129-94cc-2f1678334b5e",
+        "name": "instagram",
+        "keyword": "instagram",
+        "cmd": "https://www.instagram.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435941.3786106
+    },
+    "5ea04de2-9ffa-4795-88d1-bfe6489d3eec": {
+        "id": "5ea04de2-9ffa-4795-88d1-bfe6489d3eec",
+        "name": "drive",
+        "keyword": "drive",
+        "cmd": "https://drive.google.com/drive/u/0/my-drive",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435948.388977
+    },
+    "81baaf73-79be-49c7-ac79-621d148094bc": {
+        "id": "81baaf73-79be-49c7-ac79-621d148094bc",
+        "name": "platzi",
+        "keyword": "platzi",
+        "cmd": "https://platzi.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435963.787125
+    },
+    "fcc976a8-547c-473b-9a71-66b8676954f1": {
+        "id": "fcc976a8-547c-473b-9a71-66b8676954f1",
+        "name": "excalidraw",
+        "keyword": "excalidraw",
+        "cmd": "https://excalidraw.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435969.7209132
+    },
+    "e423bacc-864b-4d2f-8d10-4aaded6d9a5c": {
+        "id": "e423bacc-864b-4d2f-8d10-4aaded6d9a5c",
+        "name": "miro",
+        "keyword": "miro",
+        "cmd": "https://miro.com/app/dashboard/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686435995.8529477
+    },
+    "3587fa53-5aba-4f2b-9c57-f8058524929e": {
+        "id": "3587fa53-5aba-4f2b-9c57-f8058524929e",
+        "name": "exercism",
+        "keyword": "exercism",
+        "cmd": "https://exercism.org/dashboard",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436003.418995
+    },
+    "4651b26f-4f93-4447-8f6a-3a1aaaa0e934": {
+        "id": "4651b26f-4f93-4447-8f6a-3a1aaaa0e934",
+        "name": "gamedev",
+        "keyword": "gamedev",
+        "cmd": "https://www.gamedev.tv/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436122.9165432
+    },
+    "28a358a1-b397-4685-9a6d-20eaa9cf3c8e": {
+        "id": "28a358a1-b397-4685-9a6d-20eaa9cf3c8e",
+        "name": "humblebundle",
+        "keyword": "humblebundle",
+        "cmd": "https://www.humblebundle.com/software?hmb_source=navbar",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436145.5327458
+    },
+    "be47c6dc-e68c-42e7-9c7d-dc7d337198c9": {
+        "id": "be47c6dc-e68c-42e7-9c7d-dc7d337198c9",
+        "name": "npm",
+        "keyword": "npm",
+        "cmd": "https://www.npmjs.com/search?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1686436162.732179
+    },
+    "23390eb2-1bea-414e-aff4-dc48a5157b29": {
+        "id": "23390eb2-1bea-414e-aff4-dc48a5157b29",
+        "name": "packagephobia",
+        "keyword": "packagephobia",
+        "cmd": "https://packagephobia.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436170.5485618
+    },
+    "7bcf033e-3a85-4552-9e6e-0b2660eb3fa8": {
+        "id": "7bcf033e-3a85-4552-9e6e-0b2660eb3fa8",
+        "name": "bundlephobia",
+        "keyword": "bundlephobia",
+        "cmd": "https://bundlephobia.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436179.0171874
+    },
+    "0b846023-1941-4b7c-9e17-0c1c457d451b": {
+        "id": "0b846023-1941-4b7c-9e17-0c1c457d451b",
+        "name": "translate",
+        "keyword": "translate",
+        "cmd": "https://translate.google.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436186.8316147
+    },
+    "7c32a6ef-0724-4b9f-af60-56bcd4709982": {
+        "id": "7c32a6ef-0724-4b9f-af60-56bcd4709982",
+        "name": "feriados",
+        "keyword": "feriados",
+        "cmd": "https://www.feriados.cl/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436193.9642775
+    },
+    "860cfa6b-806e-4898-b194-362d2ec1d65e": {
+        "id": "860cfa6b-806e-4898-b194-362d2ec1d65e",
+        "name": "dribbble",
+        "keyword": "dribbble",
+        "cmd": "https://dribbble.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436201.6315565
+    },
+    "c75fc482-d19d-49de-b76e-5df8be3304de": {
+        "id": "c75fc482-d19d-49de-b76e-5df8be3304de",
+        "name": "virustotal",
+        "keyword": "virustotal",
+        "cmd": "https://www.virustotal.com/gui/home/upload",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436211.0140507
+    },
+    "d846aaaf-77a2-40af-9d43-1e9d0f75d7e7": {
+        "id": "d846aaaf-77a2-40af-9d43-1e9d0f75d7e7",
+        "name": "AI Code Reviewer",
+        "keyword": "AI Code Reviewer",
+        "cmd": "https://ai-code-reviewer.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436220.202632
+    },
+    "b9e974c1-f039-433b-aee9-953aa06f72c3": {
+        "id": "b9e974c1-f039-433b-aee9-953aa06f72c3",
+        "name": "chat",
+        "keyword": "chat",
+        "cmd": "https://chat.openai.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436229.5479312
+    },
+    "865e4618-30c7-4167-b69e-e80dae25b925": {
+        "id": "865e4618-30c7-4167-b69e-e80dae25b925",
+        "name": "codely",
+        "keyword": "codely",
+        "cmd": "https://codely.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436237.0161428
+    },
+    "952521f0-e11a-4839-8fd6-86f57d26a741": {
+        "id": "952521f0-e11a-4839-8fd6-86f57d26a741",
+        "name": "trello",
+        "keyword": "trello",
+        "cmd": "https://trello.com/b/puaaEyuq/gtd2",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436278.0120683
+    },
+    "0c468539-f0a7-49f8-8e92-e7fe25d46fcf": {
+        "id": "0c468539-f0a7-49f8-8e92-e7fe25d46fcf",
+        "name": "aifindy",
+        "keyword": "aifindy",
+        "cmd": "https://aifindy.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436285.395185
+    },
+    "32421692-7c79-4659-a560-3c35b49bd597": {
+        "id": "32421692-7c79-4659-a560-3c35b49bd597",
+        "name": "useblackbox",
+        "keyword": "useblackbox",
+        "cmd": "https://www.useblackbox.io/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436293.3636088
+    },
+    "073cb79f-e2e1-4c78-a611-849b3abb5c36": {
+        "id": "073cb79f-e2e1-4c78-a611-849b3abb5c36",
+        "name": "photopea",
+        "keyword": "photopea",
+        "cmd": "https://www.photopea.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436306.047591
+    },
+    "7df95b78-6822-4ed4-bdcb-99af56fae38b": {
+        "id": "7df95b78-6822-4ed4-bdcb-99af56fae38b",
+        "name": "figma",
+        "keyword": "figma",
+        "cmd": "https://www.figma.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436335.3514304
+    },
+    "a0d9b5ff-08a8-42fa-89bc-69653aacd44d": {
+        "id": "a0d9b5ff-08a8-42fa-89bc-69653aacd44d",
+        "name": "jira",
+        "keyword": "jira",
+        "cmd": "https://www.atlassian.com/es/software/jira",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436356.8436465
+    },
+    "e41a3102-011f-4623-acf7-72de4d053217": {
+        "id": "e41a3102-011f-4623-acf7-72de4d053217",
+        "name": "you",
+        "keyword": "you",
+        "cmd": "https://you.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436365.910009
+    },
+    "997909e4-baa2-4cac-a42e-8b74e6bc725a": {
+        "id": "997909e4-baa2-4cac-a42e-8b74e6bc725a",
+        "name": "pub",
+        "keyword": "pub",
+        "cmd": "https://pub.dev/packages?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1686436383.4940977
+    },
+    "f27cb375-dd53-4d65-baec-eb87fe58dcf8": {
+        "id": "f27cb375-dd53-4d65-baec-eb87fe58dcf8",
+        "name": "roadmap",
+        "keyword": "roadmap",
+        "cmd": "https://roadmap.sh/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436651.5874789
+    },
+    "79b3f950-194f-4bc4-9739-a5663aaa7ccc": {
+        "id": "79b3f950-194f-4bc4-9739-a5663aaa7ccc",
+        "name": "notion",
+        "keyword": "notion",
+        "cmd": "https://www.notion.so/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436947.4476976
+    },
+    "87f3a149-5343-4999-a49c-80cb4a1c1ac1": {
+        "id": "87f3a149-5343-4999-a49c-80cb4a1c1ac1",
+        "name": "phind",
+        "keyword": "phind",
+        "cmd": "https://www.phind.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436957.4790711
+    },
+    "f774f61d-3e17-4b61-b4cc-16eea6fcb17e": {
+        "id": "f774f61d-3e17-4b61-b4cc-16eea6fcb17e",
+        "name": "perplexity",
+        "keyword": "perplexity",
+        "cmd": "https://www.perplexity.ai",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436971.88027
+    },
+    "923d3d42-4810-416e-aa6d-abd64f69c3e1": {
+        "id": "923d3d42-4810-416e-aa6d-abd64f69c3e1",
+        "name": "quicktype",
+        "keyword": "quicktype",
+        "cmd": "https://app.quicktype.io/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686436990.4140215
+    },
+    "297852b3-fdfa-4b16-b0ca-5a3293b0514b": {
+        "id": "297852b3-fdfa-4b16-b0ca-5a3293b0514b",
+        "name": "ava",
+        "keyword": "ava",
+        "cmd": "https://campusvirtual.duoc.cl/ultra/stream",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686437014.9946136
+    },
+    "d3cacaae-5a33-454c-9ff6-6b5ad8b43ca3": {
+        "id": "d3cacaae-5a33-454c-9ff6-6b5ad8b43ca3",
+        "name": "vivo",
+        "keyword": "vivo",
+        "cmd": "https://experienciavivo.duoc.cl/alumnos/horarios",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686437040.3955083
+    },
+    "e887c93f-e39b-4c29-88ee-6360391c6d39": {
+        "id": "e887c93f-e39b-4c29-88ee-6360391c6d39",
+        "name": "linkedin",
+        "keyword": "linkedin",
+        "cmd": "https://www.linkedin.com/jobs/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686491946.2949367
+    },
+    "9280aa22-d083-4b83-81d0-cb4252b4cab7": {
+        "id": "9280aa22-d083-4b83-81d0-cb4252b4cab7",
+        "name": "whatsapp",
+        "keyword": "wsp",
+        "cmd": "https://web.whatsapp.com/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686955882.4024065
+    },
+    "dc8fb4a0-1a45-4217-adcd-0a99dc7c7df0": {
+        "id": "dc8fb4a0-1a45-4217-adcd-0a99dc7c7df0",
+        "name": "music.youtube",
+        "keyword": "music.youtube",
+        "cmd": "https://music.youtube.com",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1686955900.9028764
+    }
+}

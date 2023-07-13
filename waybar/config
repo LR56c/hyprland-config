@@ -1,0 +1,176 @@
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 20,
+    "width": 1920,
+    "margin": "0 0 0 0",
+    "spacing": 0,
+    "modules-left": [
+        "wlr/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/media",
+        "keyboard-state",
+        "custom/pacman",
+        "cpu",
+        "memory",
+        "custom/network_traffic",
+        "network",
+        "pulseaudio",
+        "tray"
+    ],
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "sort-by-number": true,
+        "persistent_workspaces": {
+            "1": ["DP-1"],
+            "2": ["DP-1"],
+            "3": ["DP-1"],
+            "4": ["DP-1"],
+            "5": ["DP-1"],
+            "6": ["DP-1"],
+            "7": ["DP-1"],
+            "8": ["DP-1"],
+            "9": ["DP-1"],
+            "10": ["DP-1"],
+            "11": ["HDMI-A-1"],
+            "12": ["HDMI-A-1"],
+            "13": ["HDMI-A-1"],
+            "14": ["HDMI-A-1"],
+            "15": ["HDMI-A-1"],
+            "16": ["HDMI-A-1"],
+            "17": ["HDMI-A-1"],
+            "18": ["HDMI-A-1"],
+            "19": ["HDMI-A-1"],
+            "20": ["HDMI-A-1"]
+        },
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "focused": "",
+            "default": ""
+        },
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1"
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "icon": false,
+        "icon-size": 20,
+        "separate-outputs": true
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 5
+    },
+    "clock": {
+        "max-length": 50,
+        "format": " {:%H:%M}",
+        "format-alt": " {:%a %d %b %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "on-click": "zenity --calendar",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 4,
+            "on-scroll"     : 1,
+            "on-click-right": "mode",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                }
+            },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+            }
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "on-click": "alacritty -e htop"
+    },
+    "memory": {
+        "format": "RAM {used}GB",
+        "on-click": "alacritty -e htop"
+    },
+    "network": {
+        "format": "Disabled",
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "⚠",
+        "on-click": "nmtui-connect"
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume: >3}%",
+        "format-bluetooth": "{icon} {volume: >3}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": [
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/pacman": {
+        "format": " {}",
+        "interval": 7200,
+        "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'", 
+        "exec-if": "exit 0", 
+        "on-click": "alacritty -e update", 
+        "signal": 8
+    },
+    "custom/network_traffic": {
+        "exec": "~/.config/waybar/scripts/network_traffic.sh",
+        "return-type": "json",
+        "format-ethernet": "⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}"
+    },
+    "keyboard-state": {
+        "capslock": true,
+        "format": {
+            "capslock": "{icon}"                                                                                                                                                       
+        },
+        "format-icons": {
+            "locked": "CAPSLOCK",
+            "unlocked": ""
+        }
+    },
+    "custom/media": {
+        "format": "{icon}{}",
+        "return-type": "json",
+        "format-icons": {
+            "Playing": "▶ ",
+            "Paused": "⏸ "
+        },
+        "max-length":40,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause"
+    }
+}
