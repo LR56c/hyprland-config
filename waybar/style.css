@@ -40,6 +40,8 @@ nord15 #b48ead
 
 /* Reset all styles */
 
+@import "mocha.css";
+
 * {
     color: #eceff4;
     border: 0;

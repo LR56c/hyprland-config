@@ -1,1 +1,22 @@
-@theme "/home/lr56c/.local/share/rofi/themes/catppuccin-mocha.rasi"
+configuration{
+    modi: "run,drun,filebrowser";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-filebrowser: "  Files";
+    display-Network: " 󰤨  Network";
+    sidebar-mode: true;
+     filebrowser {
+        directory: "/";
+        sorting-method: "name";
+        directories-first: true;
+    }
+}
+
+@theme "catppuccin-mocha"

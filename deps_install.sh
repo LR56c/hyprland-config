@@ -1,4 +1,4 @@
-# necesarios
+#!/bin/bash
 sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm bind
 sudo pacman -S --noconfirm clamtk
@@ -37,6 +37,7 @@ sudo pacman -S --noconfirm qt5ct
 sudo pacman -S --noconfirm rofi
 sudo pacman -S --noconfirm stacer
 sudo pacman -S --noconfirm ttf-ms-fonts
+sudo pacman -S --noconfirm ttf-jetbrains-mono
 sudo pacman -S --noconfirm udiskie
 sudo pacman -S --noconfirm ulauncher
 sudo pacman -S --noconfirm visual-studio-code-bin
@@ -51,85 +52,4 @@ sudo pacman -S --noconfirm wev
 sudo pacman -S --noconfirm jetbrains-toolbox
 sudo pacman -S --noconfirm github-cli
 sudo pacman -S --noconfirm the_silver_searcher
-
 sudo pacman -Syu --noconfirm
-
-# snap
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install nvim --classic
-sudo snap install flutter --classic
-
-#restante.. 
-dotly
-qt/gtk theme +font
-rofi theme
-ulauncher theme
-sdkman
-vlang
-discord manual (+BetterDiscord) (/home/lr56c/.local/share/applications/discord.desktop)
-wallpapers
-
-# guardados
-zenity
-ttf-jetbrains-mono
-nwg-drawer
-nwg-launchers
-nwg-look
-
-#opcionales
-alacritty
-pieces-os
-pieces-for-developers
-
-# wifi tplink t2u
-mkdir drivers
-cd drivers
-git clone https://github.com/aircrack-ng/rtl8812au.git
-cd rtl8812au
-sudo make dkms_install
-
-# rofi theme
-git clone https://github.com/lr-tech/rofi-themes-collection.git
-cd rofi-themes-collection
-mkdir -p ~/.local/share/rofi/themes/
-cp themes/spotlight-dark.rasi  ~/.local/share/rofi/themes/
-
-# ulauncher theme
-mkdir -p ~/.config/ulauncher/user-themes
-git clone https://github.com/Raayib/WhiteSur-Dark-ulauncher.git \
-  ~/.config/ulauncher/user-themes/WhiteSur-Dark-ulauncher
-
-#dotly
-bash <(wget -qO- https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/installer)
-
-#sdkman
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 11.0.19-tem
-
-#vlang
-git clone https://github.com/vlang/v
-cd v
-make
-
-#AUR
-anyrun-git
-exercism-bin
-hyprland-autoname-workspaces-git
-hyprpicker
-rofi-file-browser-extended-git
-snapd
-textsnatcher
-pyprland
-appimagelauncher
-emote
-
-# sddm
-conf: /usr/lib/sddm/sddm.conf.d/
-conf alt: /etc/sddm.conf
-theme: /usr/share/sddm/themes/
-
-# qt theme
-/etc/environment
-QT_QPA_PLATFORMTHEME=qt5ct
