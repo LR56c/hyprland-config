@@ -143,7 +143,10 @@ QT_QPA_PLATFORMTHEME=qt5ct
 
 ## nwgbar-icons
 ```bash
-sudo sh ~/.config/custom-themes/catpuccin/nwgbar-icons/install.sh
+cd ~/.config/custom-themes/catpuccin/nwgbar-icons
+```
+```bash
+sudo sh install.sh
 ```
 
 ## Vlang (optional)
