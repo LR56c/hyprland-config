@@ -33,7 +33,7 @@ cp -r garuda-hyprland-pc-config/* ~/.config
     - copy discord.desktop file in `/<discord_path>/Discord` to: `/home/lr56c/.local/share/applications/discord.desktop`
       - add: `Exec=/<discord_path>/Discord`
 
-- jetbrains config
+- jetbrains config +plugins_list
 ```bash
 https://github.com/LR56c/jetbrains_ide_settings
 ```
