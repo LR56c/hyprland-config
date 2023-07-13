@@ -54,7 +54,13 @@ sudo snap install nvim --classic
 ```bash
 sudo snap install flutter --classic
 ```
-
+- optionals
+```bash
+sudo snap install pieces-os
+```
+```bash
+sudo snap install pieces-for-developers
+```
 ## Manual AUR Packages
 - recommend pamac-aur (GUI)
 ```bash
