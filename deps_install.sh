@@ -11,7 +11,6 @@ sudo pacman -S --noconfirm firefox
 sudo pacman -S --noconfirm fish
 sudo pacman -S --noconfirm galculator
 sudo pacman -S --noconfirm gimp
-sudo pacman -S --noconfirm github
 sudo pacman -S --noconfirm gitkraken
 sudo pacman -S --noconfirm grimblast-git
 sudo pacman -S --noconfirm htop

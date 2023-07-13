@@ -4,9 +4,9 @@
 - [Installation](#installation)
 - [Remember](#remember)
 - [Important Dependencies](#important-dependencies)
+- [Manual AUR Packages](#manual-aur-packages)
 - [Enable Snap](#enable-snap)
 - [Snap Packages](#snap-packages)
-- [Manual AUR Packages](#manual-aur-packages)
 - [Rofi Theme](#rofi-theme)
 - [Ulauncher Theme](#ulauncher-theme)
 - [Dotly](#dotly)
@@ -20,7 +20,7 @@
 ## Installation
 ```bash
 git clone https://github.com/LR56c/garuda-hyprland-pc-config.git && \
-cp -r /garuda-hyprland-pc-config/* ~/.config
+cp -r garuda-hyprland-pc-config/* ~/.config
 ```
 
 ## Remember
@@ -41,26 +41,6 @@ sudo chmod +x ~/.config/deps_install.sh
 sudo sh ~/.config/deps_install.sh
 ```
 
-## Enable Snap
-```bash
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
-```
-
-## Snap Packages
-```bash
-sudo snap install nvim --classic
-```
-```bash
-sudo snap install flutter --classic
-```
-- optionals
-```bash
-sudo snap install pieces-os
-```
-```bash
-sudo snap install pieces-for-developers
-```
 ## Manual AUR Packages
 - recommend pamac-aur (GUI)
 ```bash
@@ -98,6 +78,27 @@ pieces-os
 ```
 ```bash
 pieces-for-developers
+```
+
+## Enable Snap
+```bash
+sudo systemctl enable --now snapd.socket && \
+sudo ln -s /var/lib/snapd/snap /snap
+```
+
+## Snap Packages
+```bash
+sudo snap install nvim --classic
+```
+```bash
+sudo snap install flutter --classic
+```
+- optionals
+```bash
+sudo snap install pieces-os
+```
+```bash
+sudo snap install pieces-for-developers
 ```
 
 ## Rofi Theme
