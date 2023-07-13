@@ -1,0 +1,165 @@
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 20,
+    "width": 1366,
+    "margin": "0 0 0 0",
+    "spacing": 0,
+    "modules-left": [
+        "wlr/workspaces",
+        "hyprland/language",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "custom/media",
+        "clock"
+    ],
+    "modules-right": [
+        "keyboard-state",
+        "custom/pacman",
+        "cpu",
+        "memory",
+        "custom/network_traffic",
+        "network",
+        "battery",
+        "backlight",
+        "pulseaudio",
+        "tray"
+    ],
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "sort-by-number": true,
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "focused": "",
+            "default": ""
+        },
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1"
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "icon": true,
+        "icon-size": 20
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 5
+    },
+    "clock": {
+        "max-length": 50,
+        "format": " {:%H:%M}",
+        "format-alt": " {:%a %d %b %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "on-click": "zenity --calendar",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 5,
+            "on-scroll"     : 1,
+            "on-click-right": "mode",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                }
+            },
+        "actions":  {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+            }
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "on-click": "alacritty -e htop"
+    },
+    "memory": {
+        "format": "RAM {used}GB",
+        "on-click": "alacritty -e htop"
+    },
+    "network": {
+        "format": "Disabled",
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "⚠",
+        "on-click": "nmtui-connect"
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume: >3}%",
+        "format-bluetooth": "{icon} {volume: >3}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": [
+                ""
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/pacman": {
+        "format": " {}",
+        "interval": 7200,
+        "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'", 
+        "exec-if": "exit 0", 
+        "on-click": "alacritty -e update", 
+        "signal": 8
+    },
+    "custom/network_traffic": {
+        "exec": "~/.config/waybar/scripts/network_traffic.sh",
+        "return-type": "json",
+        "format-ethernet": "⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes}"
+    },
+    "keyboard-state": {
+        "capslock": true,
+        "format": {
+            "capslock": "{icon}"                                                                                                                                                       
+        },
+        "format-icons": {
+            "locked": "CAPSLOCK",
+            "unlocked": ""
+        }
+    },
+    "custom/media": {
+        "format": "{icon}{}",
+        "return-type": "json",
+        "format-icons": {
+            "Playing": "▶ ",
+            "Paused": "⏸ "
+        },
+        "max-length":20,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause"
+    },
+    "hyprland/language": {
+        "format": " {}",
+        "keyboard-name": "at-translated-set-2-keyboard"
+    },
+    "backlight": {
+        "format": "{icon} {percent: >3}%",
+        "format-icons": ["", ""],
+        "on-scroll-down": "brightnessctl -c backlight set 1%-",
+        "on-scroll-up": "brightnessctl -c backlight set +1%"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity: >3}%",
+        "format-icons": ["", "", "", "", ""]
+    }
+}
