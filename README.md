@@ -119,17 +119,20 @@ cp themes/spotlight-dark.rasi  ~/.local/share/rofi/themes/
 mkdir -p ~/.config/ulauncher/user-themes
 ```
 ```bash
-git clone https://github.com/Raayib/WhiteSur-Dark-ulauncher.git \
+sudo git clone https://github.com/Raayib/WhiteSur-Dark-ulauncher.git \
   ~/.config/ulauncher/user-themes/WhiteSur-Dark-ulauncher
 ```
 ## Dotly
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/CodelyTV/dotly/HEAD/installer)
 ```
+```bash
+cp ~/.config/.zshrc ~
+```
 
 ## Sdkman
 ```bash
-curl -s "https://get.sdkman.io" | bash source "$HOME/.sdkman/bin/sdkman-init.sh"
+curl -s "https://get.sdkman.io" | bash
 ```
 
 ## Fix QT Theme
@@ -154,7 +157,7 @@ make
 ```bash
 sudo cp -r ~/.config/custom-themes/sddm/sober /usr/share/sddm/themes/
 ```
-- file: `/usr/lib/sddm/sddm.conf.d/sddm.conf` or `/etc/sddm.conf`
+- file: `/usr/lib/sddm/sddm.conf.d/default.conf` or `/etc/sddm.conf`
 ```bash
 [Theme]
 Current=sober
