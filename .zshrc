@@ -80,7 +80,7 @@ BLK="04" CHR="04" DIR="04" EXE="00" REG="00" HARDLINK="00" SYMLINK="06" MISSING=
 export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 export NNN_PLUG='j:z;f:fzcd;p:preview-tui-ext'
 export NNN_FIFO=/tmp/nnn.fifo
-export JAVA_HOME="/home/lr56c/.sdkman/candidates/java/current"
+export JAVA_HOME="/home/lr56c/.jdks/openjdk-20.0.1"
 export jetbrains="/home/lr56c/.local/share/JetBrains/Toolbox/scripts"
 export cargo="/home/lr56c/.cargo"
 export v="/home/lr56c/v"
