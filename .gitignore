@@ -66,12 +66,17 @@ obsidian/
 octopi/
 pamac/
 pavucontrol.ini
+modem-manager-gui/
+jgit/
+.wrangler/
+microsoft-edge/
 pcmanfm/
 psd/
 pulse/
 ranger/
 session/
 smplayer/
+turso/
 stacer/
 starship.toml
 starship_cat.toml
@@ -84,6 +89,8 @@ vscode-sqltools/
 xfce4/
 xsettingsd/
 QtProject.conf
+hyprland-mimeapps.list
+kwritemetainfos
 pacmac/
 #ulauncher/
 #swaylock/

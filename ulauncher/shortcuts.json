@@ -478,5 +478,15 @@
         "is_default_search": false,
         "run_without_argument": true,
         "added": 1686955900.9028764
+    },
+    "6dccc046-fc44-476d-8ae0-71a05c0d6ef3": {
+        "id": "6dccc046-fc44-476d-8ae0-71a05c0d6ef3",
+        "name": "pkg go",
+        "keyword": "go",
+        "cmd": "https://pkg.go.dev/search?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1690924535.891775
     }
 }

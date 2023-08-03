@@ -52,14 +52,15 @@ source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
 source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
 
 
-alias .="pcmanfm . &"
+alias .="dolphin . &"
 alias w.="webstorm . &"
 alias c.="clion . &"
 alias s.="studio . &"
 alias p.="pycharm . &"
 alias i.="idea . &"
-alias g.="gateway . &"
-alias discord="Discord"
+alias gt.="gateway . &"
+alias g.="goland . &"
+#alias discord="Discord"
 
 
 
@@ -87,12 +88,15 @@ export v="/home/lr56c/v"
 export flutter="/home/lr56c/snap/flutter/common/flutter"
 export CHROME_EXECUTABLE="/opt/google/chrome/chrome"
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export turso="/home/lr56c/.turso"
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export discord="/home/lr56c/Discord"
-export PATH="$PATH:$JAVA_HOME/bin:$cargo/bin:$jetbrains:$v:$flutter/bin:$snap/bin:$discord"
+#export discord="/home/lr56c/Discord"
+export PATH="$PATH:$JAVA_HOME/bin:$cargo/bin:$jetbrains:$v:$flutter/bin:$snap/bin:$turso"
 export PATH="/home/lr56c/.local/bin:$PATH"
-
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
 
 
 
