@@ -70,6 +70,9 @@ snapd
 textsnatcher
 ```
 ```bash
+xwaylandvideobridge-cursor-mode-2-git
+```
+```bash
 pyprland
 ```
 ```bash
