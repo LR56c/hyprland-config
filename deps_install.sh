@@ -8,6 +8,7 @@ sudo pacman -S --noconfirm docker
 sudo pacman -S --noconfirm libreoffice-fresh
 sudo pacman -S --noconfirm dolphin
 sudo pacman -S --noconfirm firefox
+sudo pacman -S --noconfirm discord
 sudo pacman -S --noconfirm fish
 sudo pacman -S --noconfirm galculator
 sudo pacman -S --noconfirm gimp
