@@ -6,7 +6,8 @@
     "margin": "0 0 0 0",
     "spacing": 0,
     "modules-left": [
-        "wlr/workspaces",
+        "user",
+        "hyprland/workspaces",
         "hyprland/window"
     ],
     "modules-center": [
@@ -23,33 +24,11 @@
         "pulseaudio",
         "tray"
     ],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
         "all-outputs": true,
         "sort-by-number": true,
-        "persistent_workspaces": {
-            "1": ["DP-1"],
-            "2": ["DP-1"],
-            "3": ["DP-1"],
-            "4": ["DP-1"],
-            "5": ["DP-1"],
-            "6": ["DP-1"],
-            "7": ["DP-1"],
-            "8": ["DP-1"],
-            "9": ["DP-1"],
-            "10": ["DP-1"],
-            "11": ["HDMI-A-1"],
-            "12": ["HDMI-A-1"],
-            "13": ["HDMI-A-1"],
-            "14": ["HDMI-A-1"],
-            "15": ["HDMI-A-1"],
-            "16": ["HDMI-A-1"],
-            "17": ["HDMI-A-1"],
-            "18": ["HDMI-A-1"],
-            "19": ["HDMI-A-1"],
-            "20": ["HDMI-A-1"]
-        },
         "format-icons": {
             "1": "1",
             "2": "2",
@@ -86,6 +65,13 @@
     "tray": {
         "icon-size": 15,
         "spacing": 5
+    },
+    "user": {
+        "format": "{work_H}:{work_M}↑",
+        "interval": 60,
+        "height": 30,
+        "width": 30,
+        "icon": true
     },
     "clock": {
         "max-length": 50,
