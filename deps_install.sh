@@ -9,14 +9,13 @@ sudo pacman -S --noconfirm libreoffice-fresh
 sudo pacman -S --noconfirm dolphin
 sudo pacman -S --noconfirm firefox
 sudo pacman -S --noconfirm discord
+sudo pacman -S --noconfirm pcmanfm
 sudo pacman -S --noconfirm fish
 sudo pacman -S --noconfirm galculator
 sudo pacman -S --noconfirm gimp
 sudo pacman -S --noconfirm gitkraken
 sudo pacman -S --noconfirm grimblast-git
 sudo pacman -S --noconfirm htop
-sudo pacman -S --noconfirm kitty
-sudo pacman -S --noconfirm konsole
 sudo pacman -S --noconfirm kvantum-git
 sudo pacman -S --noconfirm mpv
 sudo pacman -S --noconfirm neofetch
