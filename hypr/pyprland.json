@@ -10,16 +10,6 @@
         "command": "pavucontrol",
 
         "animation": "fromRight"
-      },
-      "discord": {
-        "command": "discord",
-
-        "animation": "fromBottom"
-      },
-      "gimp": {
-        "command": "gimp",
-
-        "animation": "fromTop"
       }
     }
   }

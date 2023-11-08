@@ -6,7 +6,8 @@
     "margin": "0 0 0 0",
     "spacing": 0,
     "modules-left": [
-        "wlr/workspaces",
+        "user",
+        "hyprland/workspaces",
         "hyprland/language",
         "hyprland/window"
     ],
@@ -26,7 +27,7 @@
         "pulseaudio",
         "tray"
     ],
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
         "all-outputs": true,
@@ -56,6 +57,13 @@
     "tray": {
         "icon-size": 15,
         "spacing": 5
+    },
+    "user":{
+        "format":"{work_H}:{work_M}↑",
+        "interval":60,
+        "height":30,
+        "width":30,
+        "icon":true
     },
     "clock": {
         "max-length": 50,

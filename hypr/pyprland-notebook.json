@@ -11,17 +11,6 @@
         "command": "pavucontrol",
         "unfocus": "hide",
         "animation": "fromRight"
-      }, 
-      "discord": {
-        "command": "discord",
-        "unfocus": "hide",
-        "animation": "fromBottom",
-        "offset": "500"
-      },
-      "gimp": {
-        "command": "gimp",
-        "unfocus": "hide",
-        "animation": "fromTop"
       }
     },
     "workspaces_follow_focus": {

@@ -74,6 +74,13 @@ window#waybar {
     padding-left: 5px;
 }
 
+#user{
+    background: rgba(21, 18, 27, 0.8);
+    border-radius: 20px 20px 20px 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 #workspaces button {
     padding: 2px 0px;
     margin: 0 2;
