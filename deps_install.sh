@@ -18,6 +18,8 @@ sudo pacman -S --noconfirm grimblast-git
 sudo pacman -S --noconfirm htop
 sudo pacman -S --noconfirm kvantum-git
 sudo pacman -S --noconfirm mpv
+sudo pacman -S --noconfirm swappy
+sudo pacman -S --noconfirm rclone
 sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm nnn
 sudo pacman -S --noconfirm nodejs
