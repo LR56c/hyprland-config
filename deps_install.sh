@@ -36,7 +36,6 @@ sudo pacman -S --noconfirm python-fuzzywuzzy
 sudo pacman -S --noconfirm python-pip
 sudo pacman -S --noconfirm qt5ct
 sudo pacman -S --noconfirm rofi
-sudo pacman -S --noconfirm stacer
 sudo pacman -S --noconfirm ttf-ms-fonts
 sudo pacman -S --noconfirm ttf-jetbrains-mono
 sudo pacman -S --noconfirm udiskie
